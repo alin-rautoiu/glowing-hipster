@@ -1,4 +1,0 @@
-glowing-hipster
-===============
-
-TNHeroDezvoltare
