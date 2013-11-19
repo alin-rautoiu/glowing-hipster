@@ -1,0 +1,120 @@
+
+<html>
+	
+	<head>
+		<title>
+			Tabel angajati
+		</title>
+		<link rel="stylesheet" href="table2.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			$('#adaugare').click(function(){
+				$('.formular').show();
+			});
+			$('#submit').click(function(e){
+				e.preventDefault();
+				$('.mainTable tr:last').after(
+				'<tr><td class="name">'+ $('#name_form').val() + '</td><td class="prenume">'+ $('#surname_form').val() +'</td><td class="varsta">'+$('#age_form').val() +'</td><td class="departament">'+$('#dep_form').val() + '</td><td class="angajare">'+$('#date_form').val() + '</td><td class="post">'+$('#post_form').val()+'</td><td>'
+					);
+				$('#name_form').val('');
+				$('#surname_form').val('');
+				$('#age_form').val('');
+				$('#dep_form').val('');
+				$('#date_form').val('');
+				$('#post_form').val('');
+				$('.formular').fadeOut();
+
+				$('.mainTable td').click(function(){
+					$(this).html('');
+				});
+			});
+			$('.mainTable td').click(function(){
+				$(this).html('');
+			});
+	});
+	</script>
+
+	</head>
+
+	<body class="body">
+	<table class="mainTable">
+			<thead>
+				<tr>
+					<th class="name">
+						Nume
+					</th>
+					<th class="prenume">
+						Prenume
+					</th>
+					<th class="varsta">
+						Varsta
+					</th>
+					<th class="departament">
+						Departament
+					</th>
+					<th class="angajare">
+						Data Angajarii
+					</th>
+					<th class="post">
+						Post
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>	
+					<td class="name">Popescu</td>
+					<td class="prenume">Mihai</td>
+					<td class="varsta">27</td>
+					<td class="departament">HR</td>
+					<td class="angajare">11.03.2009</td>
+					<td class="post">Secretara</td>
+				</tr>
+				<tr>	
+					<td class="name">Vasilescu</td>
+					<td class="prenume">Ghiorghe</td>
+					<td class="varsta">49</td>
+					<td class="departament">IT</td>
+					<td class="angajare">27.07.1999</td>
+					<td class="post">Nea'</td>
+				</tr>
+				<tr>	
+					<td class="name">Albu</td>
+					<td class="prenume">Decebal</td>
+					<td class="varsta">81</td>
+					<td class="departament">HR</td>
+					<td class="angajare">11.03.1963</td>
+					<td class="post">Nimeni nu stie, dar ceva face</td>
+				</tr>
+				<tr>	
+					<td class="name">Ipsilante</td>
+					<td class="prenume">Panait</td>
+					<td class="varsta">36</td>
+					<td class="departament">Personal auxiliar</td>
+					<td class="angajare">11.03.2002</td>
+					<td class="post">Doamna cu matura</td>
+				</tr>
+				<tr>	
+					<td class="name">John</td>
+					<td class="prenume">Fueglesong</td>
+					<td class="varsta">31</td>
+					<td class="departament">Din afara companiei</td>
+					<td class="angajare">11.03.2012</td>
+					<td class="post">Amuzament</td>
+				</tr>
+			</tbody>
+		</table>
+		<form class='formular'>
+			<input id="name_form" type="text">
+			<input id="surname_form" type="text">
+			<input id="age_form" type="text">
+			<input id="dep_form" type="text">
+			<input id="date_form" type="text">
+			<input id="post_form" type="text">
+			<input id="submit" type="submit">
+		</form>
+		<button id="adaugare">Adauga angajat</button>
+	</body>
+</html>
