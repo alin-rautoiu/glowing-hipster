@@ -31,8 +31,18 @@
 					$(this).html('');
 				});
 			});
+
 			$('.mainTable td').click(function(){
 				$(this).html('');
+				var non_empty_cells_count = 0;
+				$(this).siblings().each(function(){
+					if($(this).html() !== ''){
+						non_empty_cells_count++;	
+					}
+				});
+				if(non_empty_cells_count === 0) {
+					$(this).parent().hide();
+				}
 			});
 	});
 	</script>
