@@ -1,14 +1,11 @@
 
 <html>
-	
 	<head>
 		<title>
 			Tabel angajati
 		</title>
 		<link rel="stylesheet" href="table2.css" />
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 	<script>
 		$(function(){
 			$('#adaugare').click(function(){
@@ -17,7 +14,7 @@
 			$('#submit').click(function(e){
 				e.preventDefault();
 				$('.mainTable tr:last').after(
-				'<tr><td class="name">'+ $('#name_form').val() + '</td><td class="prenume">'+ $('#surname_form').val() +'</td><td class="varsta">'+$('#age_form').val() +'</td><td class="departament">'+$('#dep_form').val() + '</td><td class="angajare">'+$('#date_form').val() + '</td><td class="post">'+$('#post_form').val()+'</td><td>'
+				'<tr><td id="name">'+ $('#name_form').val() + '</td><td id="prenume">'+ $('#surname_form').val() +'</td><td id="varsta">'+$('#age_form').val() +'</td><td id="departament">'+$('#dep_form').val() + '</td><td id="angajare">'+$('#date_form').val() + '</td><td id="post">'+$('#post_form').val()+'</td><td>'
 					);
 				$('#name_form').val('');
 				$('#surname_form').val('');
@@ -75,54 +72,54 @@
 			</thead>
 			<tbody>
 				<tr>	
-					<td class="name">Popescu</td>
-					<td class="prenume">Mihai</td>
-					<td class="varsta">27</td>
-					<td class="departament">HR</td>
-					<td class="angajare">11.03.2009</td>
-					<td class="post">Secretara</td>
+					<td id="name">Popescu</td>
+					<td id="prenume">Mihai</td>
+					<td id="varsta">27</td>
+					<td id="departament">HR</td>
+					<td id="angajare">11.03.2009</td>
+					<td id="post">Secretara</td>
 				</tr>
 				<tr>	
-					<td class="name">Vasilescu</td>
-					<td class="prenume">Ghiorghe</td>
-					<td class="varsta">49</td>
-					<td class="departament">IT</td>
-					<td class="angajare">27.07.1999</td>
-					<td class="post">Nea'</td>
+					<td id="name">Vasilescu</td>
+					<td id="prenume">Ghiorghe</td>
+					<td id="varsta">49</td>
+					<td id="departament">IT</td>
+					<td id="angajare">27.07.1999</td>
+					<td id="post">Nea'</td>
 				</tr>
 				<tr>	
-					<td class="name">Albu</td>
-					<td class="prenume">Decebal</td>
-					<td class="varsta">81</td>
-					<td class="departament">HR</td>
-					<td class="angajare">11.03.1963</td>
-					<td class="post">Nimeni nu stie, dar ceva face</td>
+					<td id="name">Albu</td>
+					<td id="prenume">Decebal</td>
+					<td id="varsta">81</td>
+					<td id="departament">HR</td>
+					<td id="angajare">11.03.1963</td>
+					<td id="post">Nimeni nu stie, dar ceva face</td>
 				</tr>
 				<tr>	
-					<td class="name">Ipsilante</td>
-					<td class="prenume">Panait</td>
-					<td class="varsta">36</td>
-					<td class="departament">Personal auxiliar</td>
-					<td class="angajare">11.03.2002</td>
-					<td class="post">Doamna cu matura</td>
+					<td id="name">Ipsilante</td>
+					<td id="prenume">Panait</td>
+					<td id="varsta">36</td>
+					<td id="departament">Personal auxiliar</td>
+					<td id="angajare">11.03.2002</td>
+					<td id="post">Doamna cu matura</td>
 				</tr>
 				<tr>	
-					<td class="name">John</td>
-					<td class="prenume">Fueglesong</td>
-					<td class="varsta">31</td>
-					<td class="departament">Din afara companiei</td>
-					<td class="angajare">11.03.2012</td>
-					<td class="post">Amuzament</td>
+					<td id="name">John</td>
+					<td id="prenume">Fueglesong</td>
+					<td id="varsta">31</td>
+					<td id="departament">Din afara companiei</td>
+					<td id="angajare">11.03.2012</td>
+					<td id="post">Amuzament</td>
 				</tr>
 			</tbody>
 		</table>
 		<form class='formular'>
-			<input id="name_form" type="text">
-			<input id="surname_form" type="text">
-			<input id="age_form" type="text">
-			<input id="dep_form" type="text">
-			<input id="date_form" type="text">
-			<input id="post_form" type="text">
+			<input id="name_form" type="text" placeholder="Nume">
+			<input id="surname_form" type="text" placeholder="Prenume">
+			<input id="age_form" type="text" placeholder="Varsta">
+			<input id="dep_form" type="text" placeholder="Departament">
+			<input id="date_form" type="text" placeholder="Data Angajarii">
+			<input id="post_form" type="text" placeholder="Post Ocupat">
 			<input id="submit" type="submit">
 		</form>
 		<button id="adaugare">Adauga angajat</button>
