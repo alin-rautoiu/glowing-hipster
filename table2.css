@@ -27,7 +27,7 @@
 	background-color: #990000;
 }
 #prenume:hover{
-	background-color: #AA0000;
+	background-color: #BB0000;
 }
 .varsta{
 	background-color: #000099;
@@ -36,7 +36,7 @@
 	background-color: #000099;
 }
 #varsta:hover{
-	background-color: #0000AA;
+	background-color: #0000BB;
 }
 .departament{
 	background-color: #660066;
@@ -45,7 +45,7 @@
 	background-color: #660066;
 }
 #departament:hover{
-	background-color: #770077;
+	background-color: #880088;
 }
 .angajare{
 	background-color: #007700;
@@ -54,7 +54,7 @@
 	background-color: #007700;
 }
 #angajare:hover{
-	background-color: #008800;
+	background-color: #009900;
 }
 .post{
 	background-color: #AAAAAA;
@@ -63,7 +63,7 @@
 	background-color: #AAAAAA;
 }
 #post:hover{
-	background-color: #BBBBBB;
+	background-color: #CCCCCC;
 }
 #adaugare{
 	float:right;
