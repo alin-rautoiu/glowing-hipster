@@ -13,6 +13,16 @@ var hideOnClick = function(){
 	}
 }
 
+var clearForm = function(){
+	$('#name_form').val('');
+	$('#surname_form').val('');
+	$('#age_form').val('');
+	$('#dep_form').val('');
+	$('#date_form').val('');
+	$('#post_form').val('');
+	$('.formular').fadeOut();
+}
+
 $(function(){
 	$('#adaugare').click(function(){
 		$('.formular').show();
@@ -21,15 +31,10 @@ $(function(){
 	$('#submit').click(function(e){
 		e.preventDefault();
 		$('.mainTable tr:last').after(
-		'<tr><td id="name">'+ $('#name_form').val() + '</td><td id="prenume">'+ $('#surname_form').val() +'</td><td id="varsta">'+$('#age_form').val() +'</td><td id="departament">'+$('#dep_form').val() + '</td><td id="angajare">'+$('#date_form').val() + '</td><td id="post">'+$('#post_form').val()+'</td><td>'
+			'<tr><td id="name">'+ $('#name_form').val() + '</td><td id="prenume">'+ $('#surname_form').val() +'</td><td id="varsta">'+$('#age_form').val() +'</td><td id="departament">'+$('#dep_form').val() + '</td><td id="angajare">'+$('#date_form').val() + '</td><td id="post">'+$('#post_form').val()+'</td><td>'
 			);
-		$('#name_form').val('');
-		$('#surname_form').val('');
-		$('#age_form').val('');
-		$('#dep_form').val('');
-		$('#date_form').val('');
-		$('#post_form').val('');
-		$('.formular').fadeOut();
+
+		clearForm();
 		
 		$('.mainTable tr:last td').click(hideOnClick);
 	});
