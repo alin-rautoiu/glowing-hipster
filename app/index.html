@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" ng-app="shoppingListApp">
+<head>
+  <meta charset="utf-8">
+  <title>Shopping List App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+  <div ng-view></div>
+
+  <div ng-controller="ShoppingListCtrl">
+    <input type="button" value="+" ng-click="click()">
+    <form name="inputForm" ng-show="isVisible()">
+      <input type="text" placeholder="Item Name" ng-model="items.item">
+      <textarea placeholder="Item Description" ng-model="items.details"></textarea>
+      <input type="text" placeholder="Item Category" ng-model="items.category">
+      <input type="button" value="Add" ng-click="addItem(items)">
+    </form>
+    <label>Sort By:</label>
+    <select ng-model="predicate">
+      <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
+    </select>
+    <label>List:</label>
+    <select ng-model="list">
+     <option ng-repeat="list in lists">{{list.index + 1}}</option>
+    </select>
+    <button ng-click="changeList(list - 1)">Change</button>
+    <!-- De ce nu merge asta?
+    <select ng-options="l.index for l in lists">
+    </select>-->
+    <button ng-click="newList()">New List</button>
+    <br>
+    <br>
+    <br>
+    <li ng-repeat="message in items | filter:predicate" class="ng-scope">
+      <label>Item: {{$index + 1}}</label>
+       
+        <div ng-show="!isVisibleEdit({{$index}})">
+          <p><input type="checkbox" ng-model="message.check">
+            <label ng-class="{strike:message.check}">{{message.item}}</label></p>
+          <p>
+            <textarea wrap="hard" readonly="false">{{message.details}}</textarea>
+            <input type="button" value="edit" ng-click="clickEdit({{$index}})">
+          </p>
+          <label>{{message.category}}</label>
+        </div>
+       
+        <div ng-show="isVisibleEdit({{$index}})">
+          <p>
+            <input type="text" placeholder="{{message.item}}" ng-model="items.item" required>
+          </p> 
+          <p>
+            <textarea wrap="hard" placeholder="{{message.details}}" ng-model="items.details"></textarea>
+            <input type="text" placeholder="{{message.category}}" ng-model="items.category">
+            <input type="button" value="Ok" ng-click="editList(items, {{$index}})">
+          </p>
+        </div>
+        <hr width="200" align="LEFT">
+   
+    </li>
+      <div>
+        <button ng-click="clear()">Clear</button>
+      </div>
+  </div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
