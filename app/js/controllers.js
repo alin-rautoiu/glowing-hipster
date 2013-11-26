@@ -26,7 +26,7 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
 	 					contains = true;
 	 				}
 	 			};
-	 			if(contains == false){
+	 			if(contains === false){
 	 				$scope.categories.push(item.category);
 	 			}
  			}
@@ -37,6 +37,7 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
  		};
  		$scope.clickEdit = function(index){
  			visibleEdit[index] = true;
+
  		};
 
  		$scope.isVisible = function(){
@@ -47,16 +48,29 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
  			return visibleEdit[index];
  		};
  		$scope.editList = function(input,index){
-			if(input.item != undefined){
+ 			var contains = false;
+			if(input.item != undefined && input.item != ''){
 				$scope.items[index].item = input.item;
 				$scope.items[index].details = input.details;
+				$scope.items[index].category = input.category;
+				
+				for (var i = $scope.categories.length - 1; i >= 0; i--) {
+	 				if($scope.categories[i] === input.category){
+	 					contains = true;
+	 				}
+	 			};
+	 			if(contains === false){
+	 				$scope.categories.push(input.category);
+	 			}
+	 			
 				visibleEdit[index] = false;
 			}
  		};
  		$scope.clear = function(){
  			for(var i = 0; i < $scope.items.length; i++){
- 				if($scope.items[i].check == true){
+ 				if($scope.items[i].check === true){
  					$scope.items.splice(i,1);
+ 					i--;
  				}
  			}
  		}
@@ -65,7 +79,6 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
  			$scope.lists.push({index: $scope.lists.length, list: $scope.items});
  		}
  		$scope.changeList = function(index){
- 			alert($scope.lists.length);
  			$scope.items = $scope.lists[index].list;
  		}
  });

@@ -35,25 +35,22 @@
     <br>
     <li ng-repeat="message in items | filter:predicate" class="ng-scope">
       <label>Item: {{$index + 1}}</label>
-       
         <div ng-show="!isVisibleEdit({{$index}})">
           <p><input type="checkbox" ng-model="message.check">
             <label ng-class="{strike:message.check}">{{message.item}}</label></p>
           <p>
             <textarea wrap="hard" readonly="false">{{message.details}}</textarea>
-            <input type="button" value="edit" ng-click="clickEdit({{$index}})">
+            <input type="button" value="Edit" ng-click="clickEdit({{$index}})">
           </p>
           <label>{{message.category}}</label>
         </div>
-       
         <div ng-show="isVisibleEdit({{$index}})">
+
+            <input type="text" ng-model="message.item"  ng-required>
           <p>
-            <input type="text" placeholder="{{message.item}}" ng-model="items.item" required>
-          </p> 
-          <p>
-            <textarea wrap="hard" placeholder="{{message.details}}" ng-model="items.details"></textarea>
-            <input type="text" placeholder="{{message.category}}" ng-model="items.category">
-            <input type="button" value="Ok" ng-click="editList(items, {{$index}})">
+            <textarea wrap="hard" ng-model="message.details"></textarea>
+            <input type="text" ng-model="message.category">
+            <input type="button" value="Ok" ng-click="editList(message, {{$index}})">
           </p>
         </div>
         <hr width="200" align="LEFT">
