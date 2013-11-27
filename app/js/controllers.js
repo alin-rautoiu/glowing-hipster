@@ -4,22 +4,22 @@
 var shoppingListApp = angular.module('shoppingListApp', []);
 
 var visibleAdd = false;
-var visibleEdit = [false,false,false];
+//var visibleEdit = [false,false,false];
 
 shoppingListApp.controller('ShoppingListCtrl', function($scope){
 		$scope.categories = ["","Fructe",];
 		$scope.lists = [];
-		$scope.items = [{item: 'Piersici',details: 'De celea zemoase', check: false, category: "Fructe"},
-						{item: 'Lamai',details: '2', check: false, category: "Fructe"},
-						{item: 'Apa',details: 'mate', check: false, category: ""}];
+		$scope.items = [{item: 'Piersici',details: 'De celea zemoase', check: false, category: "Fructe", editable: false},
+						{item: 'Lamai',details: '2', check: false, category: "Fructe", editable: false},
+						{item: 'Apa',details: 'plata', check: false, category: "", editable: false}];
 		$scope.lists[0] = {index: 0, list: $scope.items};
  		$scope.addItem = function(item){
  			if(item.item != ''){
-	 			$scope.items.push({item: item.item,details: item.details, check: false, category: item.category});
+	 			$scope.items.push({item: item.item,details: item.details, check: false, category: item.category, editable: item.editable});
 	 			item.item = '';
 	 			item.details = '';
 	 			visibleAdd = false;
-	 			visibleEdit.push(false);
+	 			//visibleEdit.push(false);
 	 			var contains = false;
 	 			for (var i = $scope.categories.length - 1; i >= 0; i--) {
 	 				if($scope.categories[i] == item.category){
@@ -35,8 +35,9 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
  		$scope.click = function(){
  			visibleAdd = true;
  		};
- 		$scope.clickEdit = function(index){
- 			visibleEdit[index] = true;
+ 		$scope.clickEdit = function(input){
+ 			//visibleEdit[index] = true;
+ 			input.editable = true;
 
  		};
 
@@ -44,15 +45,12 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
  			return visibleAdd;
  		};
 
- 		$scope.isVisibleEdit = function(index){
- 			return visibleEdit[index];
+ 		$scope.isVisibleEdit = function(input){
+ 			return input.editable;
  		};
  		$scope.editList = function(input,index){
  			var contains = false;
 			if(input.item != undefined && input.item != ''){
-				$scope.items[index].item = input.item;
-				$scope.items[index].details = input.details;
-				$scope.items[index].category = input.category;
 				
 				for (var i = $scope.categories.length - 1; i >= 0; i--) {
 	 				if($scope.categories[i] === input.category){
@@ -63,7 +61,7 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
 	 				$scope.categories.push(input.category);
 	 			}
 
-				visibleEdit[index] = false;
+				input.editable = false;
 			}
  		};
  		$scope.clear = function(){

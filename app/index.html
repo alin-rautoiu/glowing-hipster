@@ -10,55 +10,69 @@
   <div ng-view></div>
 
   <div ng-controller="ShoppingListCtrl">
+  
     <input type="button" value="+" ng-click="click()">
+  
     <form name="inputForm" ng-show="isVisible()">
       <input type="text" placeholder="Item Name" ng-model="items.item">
       <textarea placeholder="Item Description" ng-model="items.details"></textarea>
       <input type="text" placeholder="Item Category" ng-model="items.category">
       <input type="button" value="Add" ng-click="addItem(items)">
     </form>
+   
     <label>Sort By:</label>
+  
     <select ng-model="predicate">
       <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
     </select>
+  
     <label>List:</label>
+  
     <select ng-model="list" ng-change="changeList(list - 1)">
      <option ng-repeat="list in lists">{{list.index + 1}}</option>
     </select>
-    <button ng-click="changeList(list - 1)">Change</button>
-    <!-- De ce nu merge asta?
-    <select ng-options="l.index for l in lists">
-    </select>-->
+
     <button ng-click="newList()">New List</button>
-    <br>
-    <br>
-    <br>
-    <li ng-repeat="message in items | filter:predicate" class="ng-scope">
+  
+    <br><br><br>
+ 
+    <li ng-repeat="message in items | filter:predicate:true" class="ng-scope">
+  
       <label>Item: {{$index + 1}}</label>
-        <div ng-show="!isVisibleEdit({{$index}})">
+  
+        <div ng-show="!isVisibleEdit(message)">
+  
           <p><input type="checkbox" ng-model="message.check">
             <label ng-class="{strike:message.check}">{{message.item}}</label></p>
+  
           <p>
             <textarea wrap="hard" readonly="false">{{message.details}}</textarea>
-            <input type="button" value="Edit" ng-click="clickEdit({{$index}})">
+            <input type="button" value="Edit" ng-click="clickEdit(message)">
           </p>
+  
           <label>{{message.category}}</label>
         </div>
-        <div ng-show="isVisibleEdit({{$index}})">
+  
+        <div ng-show="isVisibleEdit(message)">
 
-            <input type="text" ng-model="message.item"  ng-required>
+          <input type="text" ng-model="message.item"  ng-required>
+          
           <p>
             <textarea wrap="hard" ng-model="message.details"></textarea>
             <input type="text" ng-model="message.category">
             <input type="button" value="Ok" ng-click="editList(message, {{$index}})">
           </p>
+        
         </div>
+        
         <hr width="200" align="LEFT">
    
     </li>
+  
       <div>
         <button ng-click="clear()">Clear</button>
       </div>
+  
   </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
