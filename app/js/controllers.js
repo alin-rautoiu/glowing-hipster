@@ -9,9 +9,9 @@ var visibleEdit = [false,false,false];
 shoppingListApp.controller('ShoppingListCtrl', function($scope){
 		$scope.categories = [null,1, 2, 3];
 		$scope.lists = [];
-		$scope.items = [{item: 'hello',details: 'hello', check: false, category: 1},
-						{item: 'hello',details: 'hello', check: false, category: 2},
-						{item: 'hello',details: 'hello', check: false, category: 3}];
+		$scope.items = [{item: 'Piersici',details: 'De celea zemoase', check: false, category: "Fructe"},
+						{item: 'Lamai',details: '2', check: false, category: "Fructe"},
+						{item: 'Apa',details: 'mate', check: false, category: ""}];
 		$scope.lists[0] = {index: 0, list: $scope.items};
  		$scope.addItem = function(item){
  			if(item.item != ''){
@@ -62,7 +62,7 @@ shoppingListApp.controller('ShoppingListCtrl', function($scope){
 	 			if(contains === false){
 	 				$scope.categories.push(input.category);
 	 			}
-	 			
+
 				visibleEdit[index] = false;
 			}
  		};

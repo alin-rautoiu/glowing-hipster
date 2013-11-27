@@ -22,7 +22,7 @@
       <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
     </select>
     <label>List:</label>
-    <select ng-model="list">
+    <select ng-model="list" ng-change="changeList(list - 1)">
      <option ng-repeat="list in lists">{{list.index + 1}}</option>
     </select>
     <button ng-click="changeList(list - 1)">Change</button>
