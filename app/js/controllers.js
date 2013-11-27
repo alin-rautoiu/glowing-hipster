@@ -7,7 +7,7 @@ var visibleAdd = false;
 var visibleEdit = [false,false,false];
 
 shoppingListApp.controller('ShoppingListCtrl', function($scope){
-		$scope.categories = [null,1, 2, 3];
+		$scope.categories = ["","Fructe",];
 		$scope.lists = [];
 		$scope.items = [{item: 'Piersici',details: 'De celea zemoase', check: false, category: "Fructe"},
 						{item: 'Lamai',details: '2', check: false, category: "Fructe"},
