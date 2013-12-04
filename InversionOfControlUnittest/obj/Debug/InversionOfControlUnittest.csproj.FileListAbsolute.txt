@@ -1,0 +1,11 @@
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\InversionOfControlUnittest.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\InversionOfControlUnittest.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\Autofac.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\InversionOfControlExemple.exe
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\Moq.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\InversionOfControlExemple.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\Moq.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\bin\Debug\Moq.xml
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\obj\Debug\InversionOfControlUnittest.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\obj\Debug\InversionOfControlUnittest.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlUnittest\obj\Debug\InversionOfControlUnittest.pdb
