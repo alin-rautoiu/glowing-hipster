@@ -1,0 +1,15 @@
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.dll
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.pdb
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.dll
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.pdb
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.dll
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.pdb
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.dll
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.pdb
+C:\Users\user\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.dll
+C:\Users\user\Desktop\Probleme\AccountRegister\AccountRegister_Core\obj\Debug\AccountRegister_Core.pdb
+C:\Users\user\Desktop\Probleme\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.dll
+C:\Users\user\Desktop\Probleme\AccountRegister\AccountRegister_Core\bin\Debug\AccountRegister_Core.pdb

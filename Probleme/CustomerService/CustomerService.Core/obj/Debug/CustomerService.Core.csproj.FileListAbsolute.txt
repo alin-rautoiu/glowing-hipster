@@ -1,0 +1,5 @@
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Core\bin\Debug\CustomerService.Core.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Core\bin\Debug\CustomerService.Core.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Core\obj\Debug\CustomerService.Core.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Core\obj\Debug\CustomerService.Core.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Core\obj\Debug\CustomerService.Core.pdb

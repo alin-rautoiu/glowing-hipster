@@ -1,0 +1,12 @@
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\CustomerService.exe.config
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\CustomerService.exe
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\CustomerService.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\obj\Debug\CustomerService.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\obj\Debug\CustomerService.exe
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\obj\Debug\CustomerService.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\Autofac.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\CustomerService.Core.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService\bin\Debug\CustomerService.Core.pdb
+C:\Users\mihail_2\Desktop\Probleme\CustomerService\CustomerService\bin\Debug\CustomerService.exe.config
+C:\Users\mihail_2\Desktop\Probleme\CustomerService\CustomerService\obj\Debug\CustomerService.exe
+C:\Users\mihail_2\Desktop\Probleme\CustomerService\CustomerService\obj\Debug\CustomerService.pdb

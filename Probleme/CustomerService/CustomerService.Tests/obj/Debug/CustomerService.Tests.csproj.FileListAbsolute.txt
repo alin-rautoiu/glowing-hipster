@@ -1,0 +1,10 @@
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\CustomerService.Tests.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\CustomerService.Tests.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\CustomerService.Core.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\Moq.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\CustomerService.Core.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\Moq.pdb
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\bin\Debug\Moq.xml
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\obj\Debug\CustomerService.Tests.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\obj\Debug\CustomerService.Tests.dll
+C:\Users\mihail_2\Desktop\CustomerService\CustomerService.Tests\obj\Debug\CustomerService.Tests.pdb

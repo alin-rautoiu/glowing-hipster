@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\InversionOfControlExemple.exe.config
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\InversionOfControlExemple.exe
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\InversionOfControlExemple.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\obj\Debug\InversionOfControlExemple.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\obj\Debug\InversionOfControlExemple.exe
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\obj\Debug\InversionOfControlExemple.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\Autofac.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\Moq.dll
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\Moq.pdb
+c:\users\user\documents\visual studio 2013\Projects\InversionOfControlExemple\InversionOfControlExemple\bin\Debug\Moq.xml

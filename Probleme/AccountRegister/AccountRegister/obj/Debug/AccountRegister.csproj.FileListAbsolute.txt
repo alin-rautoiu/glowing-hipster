@@ -1,0 +1,11 @@
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\bin\Debug\AccountRegister.exe.config
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\obj\Debug\AccountRegister.csprojResolveAssemblyReference.cache
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\bin\Debug\AccountRegister.exe
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\bin\Debug\AccountRegister.pdb
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\obj\Debug\AccountRegister.exe
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\obj\Debug\AccountRegister.pdb
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\bin\Debug\AccountRegister_Core.dll
+C:\Users\mihail_2\Desktop\AccountRegister\AccountRegister\bin\Debug\AccountRegister_Core.pdb
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister\bin\Debug\AccountRegister.exe.config
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister\obj\Debug\AccountRegister.exe
+C:\Users\mihail_2\Desktop\Probleme\AccountRegister\AccountRegister\obj\Debug\AccountRegister.pdb
