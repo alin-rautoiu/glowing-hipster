@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PersonsRegistry.Models.Person>
+
+@{ViewBag.Title = "Home Page";}
+
+<h1>Person Registry</h1>
+
+<table>
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profession)
+        </th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var person in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelPerson => person.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelPerson => person.age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelPerson => person.profession)
+                </td>
+            </tr>
+        }
+    }
+</table>
